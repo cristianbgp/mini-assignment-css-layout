@@ -1,17 +1,128 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body,
+h4 {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template: 50px 1fr / 30% 40% 30%;
+}
+
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #e6e5e5;
+}
+
+nav {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #e6e5e5;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
 }
 
 .logo-facebook {
   background-image: linear-gradient(#90c4ff, #356edd);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
 }
 
 .f-logo {
   display: flex;
   justify-content: center;
   color: white;
-  font-size: 40px;
-  padding-top: 10px;
+  font-size: 23px;
+  padding-top: 7px;
+}
+
+.search-container input {
+  border-radius: 30px;
+  border-style: none;
+  background-color: #d8d8d8;
+  padding: 0.5em;
+}
+
+.search-container button {
+  display: none;
+}
+
+.config {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 2px solid #e6e5e5;
+}
+
+.config i {
+  background-color: #d8d8d8;
+  padding: 0.3em;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.home {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.feed {
+  padding: 20px;
+  background-color: #d8d8d8;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.story {
+  border-radius: 15px;
+  height: 160px;
+  width: 90px;
+  background-image: url(https://placekitten.com/160/90);
+  background-repeat: round;
+  position: relative;
+  box-shadow: 0px 10px 10px rgb(206, 206, 206);
+}
+
+.story img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 2px solid white;
+}
+
+.story p {
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  overflow-wrap: break-word;
+  color: white;
+  margin-left: 3px;
+}
+
+.story-title {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 12px;
 }
