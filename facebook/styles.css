@@ -4,13 +4,14 @@
 }
 
 body,
-h4 {
+h4,
+h3 {
   margin: 0;
 }
 
 .container {
   display: grid;
-  grid-template: 50px 1fr / 30% 40% 30%;
+  grid-template: 50px 1fr / 25% 53% 22%;
 }
 
 header {
@@ -21,19 +22,30 @@ header {
 }
 
 nav {
-  grid-column: 2;
-  grid-row: 1;
   display: flex;
-  justify-content: center;
-  border-bottom: 2px solid #e6e5e5;
+  border-bottom: 2px solid #b39999;
 }
 
 nav ul {
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   list-style-type: none;
   align-items: center;
+  justify-content: space-around;
+}
+
+.selected {
+  color: #4a79ed;
+  padding: 0.5em;
+  border-bottom: 2px solid #4a79ed;
+}
+
+nav ul li img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
 }
 
 .logo-facebook {
@@ -55,8 +67,9 @@ nav ul {
 .search-container input {
   border-radius: 30px;
   border-style: none;
-  background-color: #d8d8d8;
+  background-color: #ecedf1;
   padding: 0.5em;
+  width: 250px;
 }
 
 .search-container button {
@@ -78,13 +91,28 @@ nav ul {
 }
 
 .home {
-  grid-column: 1;
-  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.home-header h3 {
+  font-size: 25px;
 }
 
 .feed {
   padding: 20px;
-  background-color: #d8d8d8;
+  background-color: #ecedf1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .stories {
@@ -96,7 +124,7 @@ nav ul {
   border-radius: 15px;
   height: 160px;
   width: 90px;
-  background-image: url(https://placekitten.com/160/90);
+  background-image: url(http://lorempixel.com/output/cats-h-c-450-800-10.jpg);
   background-repeat: round;
   position: relative;
   box-shadow: 0px 10px 10px rgb(206, 206, 206);
@@ -125,4 +153,96 @@ nav ul {
   justify-content: space-between;
   align-content: center;
   margin-bottom: 12px;
+}
+
+.add-post-box {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5em;
+  margin: 2em auto 1.2em;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  box-shadow: 0px 10px 10px rgb(206, 206, 206);
+}
+
+.profile-picture img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.post-container input {
+  border-radius: 9px;
+  border-style: none;
+  background-color: #ecedf1;
+  padding: 0.1em;
+  width: 390px;
+  height: 33px;
+}
+
+.post-container input::placeholder {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+
+.insert-img-button {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #ecedf1;
+  padding: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actual-post {
+  background-color: white;
+  width: 518px;
+  padding-top: 0.5em;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.posts-user {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.pp-user-date {
+  display: flex;
+  align-items: center;
+}
+
+.user-name-date p {
+  margin: 5px;
+  font-size: 13px;
+}
+
+.pp-has-story {
+  height: 35px;
+  border: 2px solid #4a79ed;
+  background-color: white;
+  padding: 2px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.caption {
+  padding-left: 10px;
+}
+
+.media img {
+  width: 100%;
 }
