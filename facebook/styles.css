@@ -264,6 +264,8 @@ nav ul li img {
 }
 
 .story {
+  background-blend-mode: darken;
+  background-color: #0000004d;
   border-radius: 15px;
   height: 160px;
   width: 90px;
@@ -396,8 +398,10 @@ a {
 }
 
 .suggested-group {
+  margin: 5% auto;
   box-shadow: 0px 5px 10px rgb(206, 206, 206);
   border-radius: 10px;
+  width: 265px;
 }
 
 .suggested-img {
@@ -409,6 +413,8 @@ a {
   background-image: url(http://www.goldenline.org/kittens/teffi-persik25_small.jpg);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  background-blend-mode: darken;
+  background-color: #0000004d;
 }
 
 .suggested-img button {
@@ -437,6 +443,7 @@ a {
 
 .friends-group {
   display: flex;
+  padding: 5px;
 }
 
 .friends-photo {
@@ -463,4 +470,25 @@ a {
 
 .friends-name {
   font-size: 12px;
+}
+
+.contacts-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cats {
+  display: flex;
+  align-items: center;
+}
+
+.cats img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 2px solid white;
+  margin-right: 10px;
 }
