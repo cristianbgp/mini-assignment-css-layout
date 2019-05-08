@@ -157,6 +157,74 @@ nav ul li img {
   padding-top: 15px;
 }
 
+.saved {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.gaming {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.fundraisers {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.fundraisers img {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-image: linear-gradient(#ffe553, #e6ad2c);
+}
+
+.memories {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.help {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.settings {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.see-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.arrow-img img {
+  height: 20px;
+  width: 20px;
+}
+
 .feed {
   padding: 20px;
   background-color: #ecedf1;
