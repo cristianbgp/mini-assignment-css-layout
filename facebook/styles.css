@@ -43,6 +43,16 @@ nav ul {
 
 .selected {
   color: #4a79ed;
+  position: relative;
+}
+
+.selected::after {
+  border-top: 0.1em solid #4a79ed;
+  content: "";
+  position: absolute;
+  right: -35px;
+  bottom: -16px;
+  left: -35px;
 }
 
 nav ul li img {
