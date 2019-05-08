@@ -26,7 +26,7 @@ nav {
   border-bottom: 2px solid #b39999;
 }
 
-nav ul {
+ul {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -97,6 +97,11 @@ nav ul li img {
   padding: 10px;
 }
 
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
 .home-header {
   display: flex;
   justify-content: space-between;
@@ -105,6 +110,31 @@ nav ul li img {
 
 .home-header h3 {
   font-size: 25px;
+}
+
+.home img {
+  height: 40px;
+  width: 40px;
+  border-radius: 25%;
+}
+
+.home p {
+  padding-left: 8px;
+  margin: 0px;
+}
+
+.family-recipes {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.red-table-talk {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
 }
 
 .feed {
