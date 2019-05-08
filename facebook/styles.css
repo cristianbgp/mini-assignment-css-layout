@@ -140,6 +140,13 @@ nav ul li img {
   padding-top: 15px;
 }
 
+.events {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 15px;
+}
+
 .feed {
   padding: 20px;
   background-color: #ecedf1;
