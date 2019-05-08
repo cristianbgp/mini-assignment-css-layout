@@ -297,3 +297,45 @@ a {
 .media img {
   width: 100%;
 }
+
+.extra {
+  padding: 1em;
+}
+
+.suggested-group {
+}
+
+.suggested-img {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 220px;
+  height: 150px;
+  background-image: url(http://www.ladyland98.com/images/dom/kakaya-poroda-koshek-samaya-laskovaya.jpg);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+
+.suggested-img button {
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background-color: #ededef;
+  font-size: 1em;
+  padding: 0.7em;
+  margin: 15px 0;
+}
+
+.group-title {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.group-description {
+  font-weight: 200;
+}
+
+.friends-photo img {
+}
