@@ -308,7 +308,7 @@ nav ul li img {
   margin: 2em auto 1.2em;
   justify-content: space-around;
   align-items: center;
-  width: 500px;
+  width: 76%;
   box-shadow: 0px 10px 10px rgb(206, 206, 206);
 }
 
@@ -323,7 +323,7 @@ nav ul li img {
   border-style: none;
   background-color: #ecedf1;
   padding: 0.1em;
-  width: 390px;
+  width: 100%;
   height: 33px;
 }
 
@@ -347,9 +347,10 @@ nav ul li img {
 
 .actual-post {
   background-color: white;
-  width: 518px;
+  width: 78%;
   padding-top: 0.5em;
   margin: auto;
+  margin-bottom: 30px;
   border-radius: 8px;
 }
 
@@ -491,4 +492,36 @@ a {
   margin-left: 5px;
   border: 2px solid white;
   margin-right: 10px;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .config {
+    display: none;
+  }
+
+  .home {
+    display: none;
+  }
+
+  .extra {
+    display: none;
+  }
+
+  header {
+    justify-content: space-around;
+  }
+
+  .fa-bars {
+    display: block;
+    color: #67686d;
+  }
 }
