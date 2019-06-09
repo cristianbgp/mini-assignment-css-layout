@@ -82,7 +82,7 @@ nav ul li img {
   border-style: none;
   background-color: #ecedf1;
   padding: 0.5em;
-  width: 250px;
+  width: 100%;
 }
 
 .search-container button {
